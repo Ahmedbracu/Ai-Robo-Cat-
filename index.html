@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Companion Face</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="emotionLabel">NEUTRAL</div>
+    <div id="infoBar">
+        TAP = Hit (Cry)<br>
+        HOLD = Cuddle<br>
+        1-9, 0, Q-O = Emotions
+    </div>
+    <div id="colorBar"></div>
+    <canvas id="faceCanvas"></canvas>
+
+    <!-- Mic Button -->
+    <button id="micBtn" title="Voice Control">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.93V21h2v-3.07A7 7 0 0 0 19 11h-2Z" />
+        </svg>
+    </button>
+    <div id="transcript"></div>
+
+    <!-- JS files loaded in dependency order -->
+    <script src="js/canvas-setup.js"></script>
+    <script src="js/mouse-tracking.js"></script>
+    <script src="js/color-utils.js"></script>
+    <script src="js/color-themes.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/emotions.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/interaction.js"></script>
+    <script src="js/drawing.js"></script>
+    <script src="js/drawing-eyes.js"></script>
+    <script src="js/drawing-mouths.js"></script>
+    <script src="js/drawing-specials.js"></script>
+    <script src="js/render-loop.js"></script>
+    <script src="js/voice-recognition.js"></script>
+</body>
+
+</html>
